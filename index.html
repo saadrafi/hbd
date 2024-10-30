@@ -15,25 +15,83 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <title>Happy Birthday</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>A magic</title>
+    <!-- mystery box icon -->
+    <link
+      rel="shortcut icon"
+      href="
+      https://cdn-icons-png.flaticon.com/512/8085/8085389.png
+    "
+      type="image/x-icon"
+    />
+    <style>
+      .firecracker {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200px;
+        height: 200px;
+        z-index: 1000;
+        display: none;
+      }
+      .sparkle {
+        position: absolute;
+        width: 4px;
+        height: 20px;
+        background: yellow;
+        animation: sparkle 1s infinite ease-in-out;
+      }
+      @keyframes sparkle {
+        0%,
+        100% {
+          transform: scale(2);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(0.5);
+          opacity: 0;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div class="vh-100 bg-dark bg-gradient">
-    <div class=" d-flex  justify-content-center align-items-center h-50">
-    <div class="card text-bg-dark w-50 h-50 shadow-lg rounded">
-      <img src="./8085389.jpg" class="card-img" alt="..." />
-      <div class="card-img-overlay d-flex flex-column align-items-center mt-5">
-        <p id="info" class="card-text w-50 fs-1 text-light fw-bold">
-          Are You Ready To Celebrate Your Birthday?
-        </p>
-        <div id="btns" class="d-flex gap-5">
+    <div class="vh-100 bg-dark bg-gradient d-flex justify-content-center align-items-center">
+      <div
+        class="card text-bg-dark w-50 h-50 shadow-lg rounded d-flex flex-column justify-content-center align-items-center"
+      >
+        <img src="./8085389.jpg" class="card-img" alt="..." />
+        <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+          <p id="info" class="card-text w-50 fs-1 text-light fw-bold text-center">
+            Do you want to see the magic?
+          </p>
+          <div id="btns" class="d-flex gap-5">
             <button type="button" id="NO" class="btn btn-danger">NO</button>
             <button type="button" id="YES" class="btn btn-light">YES</button>
+          </div>
         </div>
       </div>
     </div>
-    </div>
+    <div class="firecracker">
+      <div class="sparkle" style="top: 0; left: 50%"></div>
+      <div class="sparkle" style="top: 50%; left: 0"></div>
+      <div class="sparkle" style="top: 100%; left: 50%"></div>
+      <div class="sparkle" style="top: 50%; left: 100%"></div>
+      <!-- Add more sparkles as needed for effect -->
+      <div class="sparkle" style="top: 0; left: 0"></div>
+      <div class="sparkle" style="top: 0; left: 100%"></div>
+      <div class="sparkle" style="top: 100%; left: 0"></div>
+      <div class="sparkle" style="top: 100%; left: 100%"></div>
+
+      <div class="sparkle" style="top: 25%; left: 25%"></div>
+      <div class="sparkle" style="top: 25%; left: 75%"></div>
+      <div class="sparkle" style="top: 75%; left: 25%"></div>
+      <div class="sparkle" style="top: 75%; left: 75%"></div>
+
+      <div class="sparkle" style="top: 0; left: 25%"></div>
+      <div class="sparkle" style="top: 0; left: 75%"></div>
+      <div class="sparkle" style="top: 100%; left: 25%"></div>
+      <div class="sparkle" style="top: 100%; left: 75%"></div>
     </div>
     <script src="first.js"></script>
   </body>
