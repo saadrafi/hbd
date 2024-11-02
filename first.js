@@ -47,7 +47,7 @@ noButton.addEventListener("click", function (e) {
 // Set up the YES button functionality
 document.getElementById("YES").addEventListener("click", function (e) {
   e.preventDefault();
-  const targetDate = new Date("November 01, 2024 00:00:00").getTime();
+  const targetDate = new Date("November 19, 2024 00:00:00").getTime();
   const now = new Date().getTime();
 
   if (now >= targetDate) {
